@@ -9,14 +9,23 @@
 
 ### 1. 安装
 
-在 WorkBuddy 中搜索并安装 `sellfox-invoice` Skill。
+**方式一：一键部署（推荐）**
+
+复制 `DEPLOY.md` 中的提示词到 WorkBuddy 对话中，WorkBuddy 会自动完成安装。
+
+**方式二：手动安装**
+
+```bash
+git clone https://github.com/zhangdaniubi/sellfox-invoice.git ~/.workbuddy/skills/sellfox-invoice/
+cd ~/.workbuddy/skills/sellfox-invoice/
+npm install playwright
+pip install openpyxl
+```
 
 ### 2. 配置
 
 ```bash
-# 复制配置模板
 cp config.example.json config.json
-
 # 编辑 config.json，修改为你的路径:
 #   paths.template     → 你的发票Excel模板路径
 #   paths.output_dir   → 发票输出目录
