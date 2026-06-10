@@ -1,0 +1,32 @@
+{
+  "_comment": "=== sellfox-invoice 配置文件 === 重命名为 config.json 后使用",
+  "_help": "路径支持 ~ 表示用户主目录，如 ~/Desktop/发票模板.xlsx",
+
+  "paths": {
+    "template": "E:/2/发票/新图/新图大陆新图香港模板.xlsx",
+    "output_dir": "E:/2/ai生成发票/新图/",
+    "output_suffix": "-新图大陆-DZ02"
+  },
+
+  "price": {
+    "rate": 0.7,
+    "_comment": "亚马逊卖价 × rate = 发票单价"
+  },
+
+  "image": {
+    "display_size_px": 75,
+    "row_height": 85,
+    "col_off_px": 22,
+    "row_off_px": 6
+  },
+
+  "amazon": {
+    "domain": "www.amazon.co.jp",
+    "_comment": "价格抓取的Amazon站点域名"
+  },
+
+  "chrome": {
+    "cdp_url": "http://127.0.0.1:9222",
+    "_comment": "Chrome DevTools Protocol 地址"
+  }
+}
